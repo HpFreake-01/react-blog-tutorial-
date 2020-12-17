@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "navbar main_content main_content"
+  "footer footer footer";
+  grid-template-columns:250px 80% ;
+  row-gap: 10px;
+}
+
+.main_content{
+  grid-area: main_content;
+  background-color: #FFE2D1;
+  height: 800px;
+  margin-right: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

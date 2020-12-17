@@ -1,0 +1,24 @@
+.navbar{
+    grid-area: navbar;
+    background-color:#FFB17A;
+    height: 800px;
+    margin-left: 10px;
+    margin-right:10px;
+    border-radius: 10px 0px 0px 10px;
+}
+.items{
+    text-align: center;
+    padding-top: 35px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.item a.activeLink{
+    color: blueviolet;
+}
