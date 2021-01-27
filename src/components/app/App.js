@@ -18,12 +18,21 @@ const App = (props) => {
                 <div className="main_content">
                     <Route path='/dialogs'
                            render={ () => <Dialogs
-                               dialogs={props.state.dialogs}
-                               messages={props.state.messages}/>}/>
+                               newMassageText={props.state.dialogPage.newMessageText}
+                               dispatch={props.dispatch}
+                               dialogPage = {props.state.dialogPage}
+                               />}/>
                     <Route path='/profile'
-                           render={ () => <Profile posts={props.state.posts}/>}/>
+                           render={ () => <Profile
+                               profilePage={props.state.profilePage}
+                               dispatch={props.dispatch}
+                           />}/>
                            <Route path='/news'
-                           render={ () => <News news={props.state.news}/>}/>
+                           render={ () => <News
+                               newsPage={props.state.newsPage}
+                               dispatch={props.dispatch}
+                               newNewsText={props.state.newsPage.newNewsText}
+                           />}/>
                     <Route path='/settings'
                            render={ () => <Settings/>}/>
                 </div>
